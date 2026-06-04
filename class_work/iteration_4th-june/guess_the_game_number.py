@@ -13,3 +13,5 @@ while guess != 7:
     if guess != 7:
         print("Wrong Guess. Try Again.")
 
+# Display success message when guess is correct
+print("Congratulations! You guessed the correct number.")
