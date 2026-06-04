@@ -1,19 +1,18 @@
 # Program to check whether a number is prime or not
-# If not prime, display all factors
+
+# Prime Number Analyzer
 
 num = int(input("Enter a Number: "))
-
-factors = []
+count = 0
 
 for i in range(1, num + 1):
     if num % i == 0:
-        factors.append(i)
+        print(i, end=" ")
+        count += 1
 
-if len(factors) == 2:
+print()
+
+if count == 2:
     print(num, "is a Prime Number")
 else:
-    print("Factors:", end=" ")
-    for factor in factors:
-        print(factor, end=" ")
-    print()
     print(num, "is not a Prime Number")
