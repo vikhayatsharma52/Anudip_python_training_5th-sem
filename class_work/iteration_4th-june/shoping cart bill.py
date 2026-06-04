@@ -1,12 +1,12 @@
+# PROGRAM SHOPING CART BILL
 total = 0
 
 while True:
-    #enter the price
-    price = float(input("Enter item price (0 to stop): "))
+    price = float(input("Enter Item Price: "))
 
     if price == 0:
         break
 
-    total += price
-#................................
-print("Total Bill Amount =", total)
+    total = total + price
+
+print("Total Bill Amount: ₹", total)
