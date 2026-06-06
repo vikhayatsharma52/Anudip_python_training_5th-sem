@@ -17,6 +17,7 @@ lowest = marks[0]
 
 # check all marks
 for mark in marks:
+
     # passed students
     if mark >= 40:
         passed.append(mark)
